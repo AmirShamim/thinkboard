@@ -43,7 +43,7 @@ const NoteDetailPage = () => {
 
     const handleSave = async (e) => {
         e.preventDefault()
-        if (!note.title.trim() || !note.content.trim()) {
+        if (!note.title?.trim() || !note.content?.trim()) {
             toast.error("All fields are required")
             return
         }
